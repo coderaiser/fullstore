@@ -1,0 +1,51 @@
+{
+  "name": "fullstore",
+  "version": "1.0.0",
+  "description": "functional variables",
+  "main": "lib/fullstore.js",
+  "scripts": {
+    "test": "tape test/*.js",
+    "coverage": "nyc npm test",
+    "lint": "eslint lib test",
+    "build": "redrun clean 6to5 legacy:* build:*",
+    "6to5": "babel -d legacy/lib lib",
+    "wisdom": "npm run build",
+    "clean": "rimraf dist/* legacy/*",
+    "build:client": "webpack --progress",
+    "watcher": "nodemon -w test -w lib --exec",
+    "watch:test": "npm run watcher -- npm test",
+    "watch:lint": "npm run watcher -- 'npm run lint'",
+    "watch:tape": "nodemon -w test -w lib --exec tape",
+    "watch:coverage:base": "npm run watcher -- nyc npm test",
+    "watch:coverage:tape": "npm run watcher -- nyc tape",
+    "watch:coverage": "bin/redrun.js watch:coverage:base",
+    "legacy:index": "echo \"module.exports = require('./lib/fullstore');\" > legacy/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/coderaiser/fullstore.git"
+  },
+  "keywords": [
+    "store",
+    "variable",
+    "functional"
+  ],
+  "author": "coderaiser <mnemonic.enemy@gmail.com> (http://coderaiser.github.io/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/coderaiser/fullstore/issues"
+  },
+  "homepage": "https://github.com/coderaiser/fullstore",
+  "devDependencies": {
+    "babel-cli": "^6.1.1",
+    "babel-loader": "^7.0.0",
+    "babel-preset-es2015": "^6.0.15",
+    "eslint": "^3.10.2",
+    "nodemon": "^1.11.0",
+    "nyc": "^10.0.0",
+    "redrun": "^5.0.1",
+    "rimraf": "^2.4.3",
+    "tape": "^4.2.0",
+    "webpack": "^2.5.1"
+  }
+}
