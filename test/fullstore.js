@@ -3,14 +3,14 @@
 const fullstore = require('..');
 const test = require('tape');
 
-test('fullstore: get value', t => {
+test('fullstore: get value', (t) => {
     const value = fullstore();
     
     t.equal(undefined, value(), 'shold return value');
     t.end();
 });
 
-test('fullstore: set value', t => {
+test('fullstore: set value', (t) => {
     const value = fullstore();
     value('hello');
     
@@ -18,7 +18,7 @@ test('fullstore: set value', t => {
     t.end();
 });
 
-test('fullstore: set value: return', t => {
+test('fullstore: set value: return', (t) => {
     const value = fullstore();
     const result = value('hello');
     
