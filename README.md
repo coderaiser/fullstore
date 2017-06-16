@@ -16,7 +16,7 @@ const user = fullstore();
 
 const getValue = () => {
     return 'name';
-}
+};
 
 user(getValue());
 
