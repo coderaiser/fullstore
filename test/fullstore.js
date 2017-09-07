@@ -18,6 +18,13 @@ test('fullstore: set value', (t) => {
     t.end();
 });
 
+test('fullstore: initial value', (t) => {
+    const value = fullstore('hello');
+    
+    t.equal('hello', value(), 'shold return value');
+    t.end();
+});
+
 test('fullstore: set value: return', (t) => {
     const value = fullstore();
     const result = value('hello');

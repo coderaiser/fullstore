@@ -25,6 +25,15 @@ console.log(user());
 'name'
 ```
 
+```js
+const fullstore = require('fullstore');
+const user = fullstore('hello');
+
+console.log(user());
+// output
+'hello'
+```
+
 ## Environments
 
 In old `node.js` environments that not fully supports `es2015`, `fullstore` could be used with:
