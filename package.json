@@ -11,7 +11,7 @@
     "6to5": "babel -d legacy/lib lib",
     "wisdom": "npm run build",
     "clean": "rimraf dist/* legacy/*",
-    "build:client": "webpack --progress",
+    "build:client": "webpack --progress --mode production",
     "watcher": "nodemon -w test -w lib --exec",
     "watch:test": "npm run watcher -- npm test",
     "watch:lint": "npm run watcher -- 'npm run lint'",
@@ -46,6 +46,7 @@
     "redrun": "^5.0.1",
     "rimraf": "^2.4.3",
     "tape": "^4.2.0",
-    "webpack": "^3.0.0"
+    "webpack": "^4.1.0",
+    "webpack-cli": "^2.0.10"
   }
 }
