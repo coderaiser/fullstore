@@ -18,7 +18,7 @@
     "watch:tape": "nodemon -w test -w lib --exec tape",
     "watch:coverage:base": "npm run watcher -- nyc npm test",
     "watch:coverage:tape": "npm run watcher -- nyc tape",
-    "watch:coverage": "bin/redrun.js watch:coverage:base",
+    "watch:coverage": "redrun watch:coverage:base",
     "legacy:index": "echo \"module.exports = require('./lib/fullstore');\" > legacy/index.js"
   },
   "repository": {
