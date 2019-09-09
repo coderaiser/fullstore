@@ -1,6 +1,6 @@
 {
   "name": "fullstore",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "functional variables",
   "main": "lib/fullstore.js",
   "scripts": {
