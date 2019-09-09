@@ -1,7 +1,7 @@
 'use strict';
 
 const fullstore = require('..');
-const test = require('tape');
+const test = require('supertape');
 
 test('fullstore: get value', (t) => {
     const value = fullstore();

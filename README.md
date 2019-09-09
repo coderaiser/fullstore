@@ -34,14 +34,6 @@ console.log(user());
 'hello'
 ```
 
-## Environments
-
-In old `node.js` environments that not fully supports `es2015`, `fullstore` could be used with:
-
-```js
-var fullstore = require('fullstore/legacy');
-```
-
 ## Related
 
 - [zames](https://github.com/coderaiser/zames "zames") - converts callback-based functions to Promises and apply currying to arguments

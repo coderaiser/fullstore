@@ -4,22 +4,17 @@
   "description": "functional variables",
   "main": "lib/fullstore.js",
   "scripts": {
-    "test": "tape test/*.js",
-    "coverage": "nyc npm test",
-    "lint": "eslint lib test",
-    "build": "redrun clean 6to5 legacy:* build:*",
-    "6to5": "babel -d legacy/lib lib",
-    "wisdom": "npm run build",
-    "clean": "rimraf dist/* legacy/*",
-    "build:client": "webpack --progress --mode production",
-    "watcher": "nodemon -w test -w lib --exec",
-    "watch:test": "npm run watcher -- npm test",
-    "watch:lint": "npm run watcher -- 'npm run lint'",
-    "watch:tape": "nodemon -w test -w lib --exec tape",
-    "watch:coverage:base": "npm run watcher -- nyc npm test",
-    "watch:coverage:tape": "npm run watcher -- nyc tape",
-    "watch:coverage": "redrun watch:coverage:base",
-    "legacy:index": "echo \"module.exports = require('./lib/fullstore');\" > legacy/index.js"
+    "test": "madrun test",
+    "coverage": "madrun coverage",
+    "lint": "madrun lint",
+    "fix:lint": "madrun fix:lint",
+    "watcher": "madrun watcher",
+    "watch:test": "madrun watch:test",
+    "watch:lint": "madrun watch:lint",
+    "watch:tape": "madrun watch:tape",
+    "watch:coverage:base": "madrun watch:coverage:base",
+    "watch:coverage:tape": "madrun watch:coverage:tape",
+    "watch:coverage": "madrun watch:coverage"
   },
   "repository": {
     "type": "git",
@@ -37,16 +32,13 @@
   },
   "homepage": "https://github.com/coderaiser/fullstore",
   "devDependencies": {
-    "babel-cli": "^6.1.1",
-    "babel-loader": "^7.0.0",
-    "babel-preset-env": "^1.6.1",
     "eslint": "^6.3.0",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-putout": "^2.0.0",
+    "madrun": "^3.0.2",
     "nodemon": "^1.11.0",
     "nyc": "^14.1.1",
-    "redrun": "^6.0.0",
-    "rimraf": "^2.4.3",
-    "tape": "^4.2.0",
-    "webpack": "^4.1.0",
-    "webpack-cli": "^2.0.10"
+    "putout": "^5.15.1",
+    "supertape": "^1.2.3"
   }
 }
