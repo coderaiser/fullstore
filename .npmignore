@@ -1,8 +1,8 @@
 .*
 test
-webpack.config.js
-
 *.swp
 
 madrun.js
+dist
+legacy
 
