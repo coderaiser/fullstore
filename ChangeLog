@@ -1,3 +1,15 @@
+2020.03.25, v3.0.0
+
+feature:
+- (fullstore) drop support of node < 4
+- (package) nodemon v2.0.2
+- (package) madrun v5.4.2
+- (package) putout v7.13.1
+- (package) eslint-plugin-putout v3.2.1
+- (package) eslint-plugin-node v11.0.0
+- (package) nyc v15.0.0
+
+
 2019.09.09, v2.0.2
 
 fix:
