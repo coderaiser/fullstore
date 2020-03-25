@@ -30,6 +30,9 @@
   "bugs": {
     "url": "https://github.com/coderaiser/fullstore/issues"
   },
+  "engines": {
+    "node": ">=4"
+  },
   "homepage": "https://github.com/coderaiser/fullstore",
   "devDependencies": {
     "eslint": "^6.3.0",
