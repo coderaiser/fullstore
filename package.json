@@ -42,6 +42,6 @@
     "nodemon": "^2.0.2",
     "nyc": "^15.0.0",
     "putout": "^11.9.0",
-    "supertape": "^1.2.3"
+    "supertape": "^2.0.1"
   }
 }
