@@ -3,14 +3,14 @@
 const test = require('supertape');
 const fullstore = require('..');
 
-test('fullstore: get value', (t) => {
+test('fullstore: cjs: get value', (t) => {
     const value = fullstore();
     
     t.equal(undefined, value(), 'shold return value');
     t.end();
 });
 
-test('fullstore: set value', (t) => {
+test('fullstore: cjs: set value', (t) => {
     const value = fullstore();
     value('hello');
     
@@ -18,14 +18,14 @@ test('fullstore: set value', (t) => {
     t.end();
 });
 
-test('fullstore: initial value', (t) => {
+test('fullstore: cjs: initial value', (t) => {
     const value = fullstore('hello');
     
     t.equal('hello', value(), 'shold return value');
     t.end();
 });
 
-test('fullstore: set value: return', (t) => {
+test('fullstore: cjs: set value: return', (t) => {
     const value = fullstore();
     const result = value('hello');
     
