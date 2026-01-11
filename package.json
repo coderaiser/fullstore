@@ -1,9 +1,15 @@
 {
   "name": "fullstore",
   "version": "3.0.0",
-  "type": "commonjs",
+  "type": "module",
   "description": "functional variables",
-  "main": "lib/fullstore.js",
+  "main": "lib/fullstore.cjs",
+  "exports": {
+    ".": {
+      "require": "./lib/fullstore.cjs",
+      "import": "./lib/fullstore.js"
+    }
+  },
   "scripts": {
     "test": "madrun test",
     "coverage": "madrun coverage",
@@ -32,7 +38,7 @@
     "url": "https://github.com/coderaiser/fullstore/issues"
   },
   "engines": {
-    "node": ">=4"
+    "node": ">=22"
   },
   "homepage": "https://github.com/coderaiser/fullstore",
   "devDependencies": {

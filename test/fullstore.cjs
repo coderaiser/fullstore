@@ -1,5 +1,7 @@
-import test from 'supertape';
-import fullstore from '../lib/fullstore.js';
+'use strict';
+
+const test = require('supertape');
+const fullstore = require('..');
 
 test('fullstore: get value', (t) => {
     const value = fullstore();

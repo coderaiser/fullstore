@@ -1,5 +1,12 @@
 # Fullstore [![License][LicenseIMGURL]][LicenseURL] [![NPM version][NPMIMGURL]][NPMURL] [![Build Status][BuildStatusIMGURL]][BuildStatusURL]
 
+[NPMURL]: https://npmjs.org/package/fullstore "npm"
+[NPMIMGURL]: https://img.shields.io/npm/v/fullstore.svg?style=flat
+[BuildStatusURL]: https://github.com/coderaiser/fullstore/actions?query=workflow%3A%22Node+CI%22 "Build Status"
+[BuildStatusIMGURL]: https://github.com/coderaiser/fullstore/workflows/Node%20CI/badge.svg
+[LicenseIMGURL]: https://img.shields.io/badge/license-MIT-317BF9.svg?style=flat
+[LicenseURL]: https://tldrlegal.com/license/mit-license "MIT License"
+
 Functional variables.
 
 ## Install
@@ -26,7 +33,8 @@ console.log(user());
 ```
 
 ```js
-const fullstore = require('fullstore');
+import {fullstore} from 'fullstore';
+
 const user = fullstore('hello');
 
 console.log(user());
@@ -45,10 +53,3 @@ console.log(user());
 ## License
 
 MIT
-
-[NPMIMGURL]: https://img.shields.io/npm/v/fullstore.svg?style=flat
-[BuildStatusIMGURL]: https://img.shields.io/travis/coderaiser/fullstore/master.svg?style=flat
-[LicenseIMGURL]: https://img.shields.io/badge/license-MIT-317BF9.svg?style=flat
-[NPMURL]: https://npmjs.org/package/fullstore "npm"
-[BuildStatusURL]: https://travis-ci.org/coderaiser/fullstore "Build Status"
-[LicenseURL]: https://tldrlegal.com/license/mit-license "MIT License"
