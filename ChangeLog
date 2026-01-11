@@ -1,3 +1,21 @@
+2026.01.11, v4.0.0
+
+feature:
+- 9e19397 fullstore: migrate to ESM
+- 02f83ae fullstore: c8 v10.1.3
+- 9b0b3c4 fullstore: supertape v12.0.9
+- 9825110 fullstore: putout v41.6.3
+- 0f180d1 fullstore: nyc v17.1.0
+- 338313a fullstore: nodemon v3.1.11
+- 6aa4d1b fullstore: madrun v12.1.0
+- 30a849c fullstore: eslint-plugin-putout v29.3.0
+- 04f8b1e fullstore: eslint v9.39.2
+- ea69776 (package) supertape v2.0.1
+- 982b27f (package) eslint v7.14.0
+- bbf7f19 (package) eslint-plugin-putout v6.6.1
+- 7192761 (package) putout v11.9.0
+- 6307073 (package) madrun v7.0.5
+
 2020.03.25, v3.0.0
 
 feature:
