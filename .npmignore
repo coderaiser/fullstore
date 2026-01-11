@@ -6,3 +6,6 @@ madrun.js
 dist
 legacy
 
+yarn-error.log
+coverage
+*.config.*

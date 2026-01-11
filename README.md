@@ -1,4 +1,4 @@
-# Fullstore [![License][LicenseIMGURL]][LicenseURL] [![NPM version][NPMIMGURL]][NPMURL] [![Dependency Status][DependencyStatusIMGURL]][DependencyStatusURL] [![Build Status][BuildStatusIMGURL]][BuildStatusURL]
+# Fullstore [![License][LicenseIMGURL]][LicenseURL] [![NPM version][NPMIMGURL]][NPMURL] [![Build Status][BuildStatusIMGURL]][BuildStatusURL]
 
 Functional variables.
 
@@ -22,7 +22,7 @@ user(getValue());
 
 console.log(user());
 // output
-'name'
+'name';
 ```
 
 ```js
@@ -31,7 +31,7 @@ const user = fullstore('hello');
 
 console.log(user());
 // output
-'hello'
+'hello';
 ```
 
 ## Related
@@ -46,12 +46,9 @@ console.log(user());
 
 MIT
 
-[NPMIMGURL]:                https://img.shields.io/npm/v/fullstore.svg?style=flat
-[BuildStatusIMGURL]:        https://img.shields.io/travis/coderaiser/fullstore/master.svg?style=flat
-[DependencyStatusIMGURL]:   https://img.shields.io/david/coderaiser/fullstore.svg?style=flat
-[LicenseIMGURL]:            https://img.shields.io/badge/license-MIT-317BF9.svg?style=flat
-[NPMURL]:                   https://npmjs.org/package/fullstore "npm"
-[BuildStatusURL]:           https://travis-ci.org/coderaiser/fullstore  "Build Status"
-[DependencyStatusURL]:      https://david-dm.org/coderaiser/fullstore "Dependency Status"
-[LicenseURL]:               https://tldrlegal.com/license/mit-license "MIT License"
-
+[NPMIMGURL]: https://img.shields.io/npm/v/fullstore.svg?style=flat
+[BuildStatusIMGURL]: https://img.shields.io/travis/coderaiser/fullstore/master.svg?style=flat
+[LicenseIMGURL]: https://img.shields.io/badge/license-MIT-317BF9.svg?style=flat
+[NPMURL]: https://npmjs.org/package/fullstore "npm"
+[BuildStatusURL]: https://travis-ci.org/coderaiser/fullstore "Build Status"
+[LicenseURL]: https://tldrlegal.com/license/mit-license "MIT License"

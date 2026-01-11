@@ -1,7 +1,7 @@
 'use strict';
 
-const fullstore = require('..');
 const test = require('supertape');
+const fullstore = require('..');
 
 test('fullstore: get value', (t) => {
     const value = fullstore();
@@ -32,4 +32,3 @@ test('fullstore: set value: return', (t) => {
     t.equal(result, 'hello', 'shold return value');
     t.end();
 });
-

@@ -1,6 +1,7 @@
 {
   "name": "fullstore",
   "version": "3.0.0",
+  "type": "commonjs",
   "description": "functional variables",
   "main": "lib/fullstore.js",
   "scripts": {
@@ -18,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/coderaiser/fullstore.git"
+    "url": "git+https://github.com/coderaiser/fullstore.git"
   },
   "keywords": [
     "store",

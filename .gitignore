@@ -8,3 +8,6 @@ dist
 *.swp
 
 .putoutcache
+.idea
+yarn-error.log
+coverage
