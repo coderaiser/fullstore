@@ -22,15 +22,19 @@ jobs:
         uses: actions/setup-node@v6
         with:
           node-version: ${{ matrix.node-version }}
+      - name: Install Redrun
+        run: bun install redrun -g --no-save
       - name: Install
-        run: bun i && bun i redrun -g --no-save --no-save
+        run: bun i -f --no-save
       - name: Lint
         run: redrun fix:lint
       - name: Commit fixes
-        uses: EndBug/add-and-commit@v9
         continue-on-error: true
+        uses: EndBug/add-and-commit@v9
         with:
-          message: chore(${{ env.NAME }}) lint using actions
+          fetch: --force
+          message: "chore: ${{ env.NAME }}: actions: lint ☘️"
+          pull: --rebase --autostash
       - name: Coverage
         run: redrun coverage report
       - name: Coveralls
