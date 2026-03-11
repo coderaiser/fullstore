@@ -18,7 +18,7 @@ npm i fullstore --save
 ## How to use?
 
 ```js
-const fullstore = require('fullstore');
+import fullstore from 'fullstore';
 const user = fullstore();
 
 const getValue = () => {
