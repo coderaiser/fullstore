@@ -1,11 +1,13 @@
-.*
-test
 *.swp
+*.config.*
+*.log
+*.loc
+
+.*
 
 madrun.js
+
+test
 dist
 legacy
-
-yarn-error.log
 coverage
-*.config.*
