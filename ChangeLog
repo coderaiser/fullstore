@@ -1,3 +1,16 @@
+2026.03.18, v4.0.1
+
+fix:
+- 20c6b06 fullstore: export: named
+
+feature:
+- d8931f8 fullstore: putout v42.2.3
+- 3b46443 fullstore: madrun v13.0.1
+- 3d8a06f fullstore: eslint-plugin-putout v31.1.1
+- 539dd1b fullstore: eslint v10.0.3
+- 2c28a9c fullstore: c8 v11.0.0
+- d36a12e fullstore: superc8 v12.3.1
+
 2026.01.11, v4.0.0
 
 feature:
