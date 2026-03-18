@@ -43,7 +43,7 @@
   "homepage": "https://github.com/coderaiser/fullstore",
   "devDependencies": {
     "c8": "^11.0.0",
-    "eslint": "^9.39.2",
+    "eslint": "^10.0.3",
     "eslint-plugin-node": "^11.0.0",
     "eslint-plugin-putout": "^29.3.0",
     "madrun": "^12.1.0",
