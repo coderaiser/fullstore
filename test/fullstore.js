@@ -1,5 +1,5 @@
 import test from 'supertape';
-import fullstore from '../lib/fullstore.js';
+import {fullstore} from '../lib/fullstore.js';
 
 test('fullstore: get value', (t) => {
     const value = fullstore();
