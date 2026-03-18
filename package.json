@@ -5,10 +5,7 @@
   "description": "functional variables",
   "main": "lib/fullstore.cjs",
   "exports": {
-    ".": {
-      "require": "./lib/fullstore.cjs",
-      "import": "./lib/fullstore.js"
-    }
+    ".": "./lib/fullstore.js"
   },
   "scripts": {
     "test": "madrun test",
