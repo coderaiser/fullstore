@@ -19,6 +19,7 @@ npm i fullstore --save
 
 ```js
 import {fullstore} from 'fullstore';
+
 const user = fullstore();
 
 const getValue = () => {
