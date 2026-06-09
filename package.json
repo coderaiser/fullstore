@@ -38,14 +38,13 @@
   },
   "homepage": "https://github.com/coderaiser/fullstore",
   "devDependencies": {
-    "c8": "^11.0.0",
     "eslint": "^10.0.3",
     "eslint-plugin-node": "^11.0.0",
     "eslint-plugin-putout": "^31.1.1",
     "madrun": "^13.0.1",
     "nodemon": "^3.1.11",
     "putout": "^42.2.3",
-    "superc8": "^12.3.1",
+    "superc8": "^12.7.0",
     "supertape": "^13.2.0"
   }
 }
